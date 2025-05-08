@@ -78,7 +78,6 @@ export const PartnersSection: React.FC = () => {
 
   // Split logos into two groups for two marquees
   const firstGroup = partnerLogos.slice(0, 5);
-  const secondGroup = partnerLogos.slice(5);
 
   return (
     <section className="relative py-16 bg-black">
@@ -128,7 +127,7 @@ export const PartnersSection: React.FC = () => {
         
 
         <p className="text-center text-gray-400 mt-12">
-          We're proud to collaborate with these innovative organizations
+          We&apos;    re proud to collaborate with these innovative organizations
         </p>
       </div>
     </section>

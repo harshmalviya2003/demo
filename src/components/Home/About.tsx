@@ -98,7 +98,7 @@ const AboutUs = () => {
                     Our Goal
                   </h3>
                   <p className="text-gray-300 leading-relaxed">
-                    To increase accessibility for all people in space. We're here to fulfill your curiosity about what lies beyond our atmosphere. Together, let's go on this extraordinary journey to the stars.
+                    To increase accessibility for all people in space. We&apos;re here to fulfill your curiosity about what lies beyond our atmosphere. Together, let&apos;s go on this extraordinary journey to the stars.
                   </p>
                 </div>
               </div>

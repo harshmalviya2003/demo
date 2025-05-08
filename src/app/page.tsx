@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Hero from "../components/Home/Hero";
 import AboutUs from "@/components/Home/About";
-import DoubleMarquee, { PartnersSection } from "@/components/Home/marquee";
+import { PartnersSection } from "@/components/Home/marquee";
 import ProductSection from "@/components/Home/produt";
 import ContactPage from "@/components/Home/contact";
 

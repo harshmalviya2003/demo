@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -14,7 +14,7 @@ const Hero = () => {
       setScrollProgress(Math.min(window.scrollY / window.innerHeight, 1));
     };
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: e.clientX / window.innerWidth,
         y: e.clientY / window.innerHeight

@@ -2,21 +2,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Rocket, Satellite, Globe, Users, Award, Landmark } from 'lucide-react';
-import PartnersSection, { Marquee } from '@/components/Home/marquee';
-
+import PartnersSection from '@/components/Home/marquee';
+import Image from 'next/image';
 const AboutPage = () => {
   const founders = [
     { name: "Mahabaleshwar R", role: "Co-Founder & CTO",image: "/image/founder-1.jpg" },
     { name: "Raghupati G Bhat", role: "Co-Founder & CEO",image: "/image/founder-2.jpg" }
   ];
 
-  const supporters = [
-    { name: "Deshpande Startups", icon: <Landmark className="w-6 h-6" /> },
-    { name: "nasscom Startups", icon: <Users className="w-6 h-6" /> },
-    { name: "STARTUP KARNATAKA", icon: <Award className="w-6 h-6" /> },
-    { name: "DST MIDHI", icon: <Globe className="w-6 h-6" /> },
-    { name: "SANYAJOR", icon: <Satellite className="w-6 h-6" /> }
-  ];
+  // const supporters = [
+  //   { name: "Deshpande Startups", icon: <Landmark className="w-6 h-6" /> },
+  //   { name: "nasscom Startups", icon: <Users className="w-6 h-6" /> },
+  //   { name: "STARTUP KARNATAKA", icon: <Award className="w-6 h-6" /> },
+  //   { name: "DST MIDHI", icon: <Globe className="w-6 h-6" /> },
+  //   { name: "SANYAJOR", icon: <Satellite className="w-6 h-6" /> }
+  // ];
 
   return (
     <div className="min-h-screen mt-20 bg-black text-white overflow-hidden">
@@ -96,7 +96,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
             >
               <p>
-                At <span className="text-blue-400 font-medium">Agnihotri Aerospace</span>, we're driven by a singular passion: solving the most complex challenges in space exploration.
+                At <span className="text-blue-400 font-medium">Agnihotri Aerospace</span>, we&apos;re driven by a singular passion: solving the most complex challenges in space exploration.
               </p>
               
               <p>
@@ -108,7 +108,7 @@ const AboutPage = () => {
               </p>
               
               <p>
-                Join us as we push the boundaries of what's possible and explore what lies beyond our atmosphere.
+                Join us as we push the boundaries of what&apos;s possible and explore what lies beyond our atmosphere.
               </p>
             </motion.div>
           </div>
@@ -156,7 +156,7 @@ const AboutPage = () => {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
     >
-      <img
+      <Image
         src={founder.image}
         alt={founder.name}
         className="w-50 h-60 p-2 object-cover mb-6 mx-auto border border-blue-500/30"

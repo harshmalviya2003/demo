@@ -132,7 +132,7 @@ const ContactPage: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Reach across the cosmos to connect with our team. We're always listening on all frequencies.
+            Reach across the cosmos to connect with our team. We&apos;re always listening on all frequencies.
           </motion.p>
         </motion.div>
 
