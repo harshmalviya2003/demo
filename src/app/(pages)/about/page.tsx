@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, Satellite, Globe, Users, Award, Landmark } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 import PartnersSection from '@/components/Home/marquee';
 import Image from 'next/image';
 const AboutPage = () => {
@@ -156,7 +156,7 @@ const AboutPage = () => {
       viewport={{ once: true, margin: "-100px" }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
     >
-      <Image
+      <Image  
         src={founder.image}
         alt={founder.name}
         className="w-50 h-60 p-2 object-cover mb-6 mx-auto border border-blue-500/30"
